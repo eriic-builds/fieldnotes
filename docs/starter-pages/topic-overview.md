@@ -4,13 +4,17 @@ topic: knowledge-base
 last_updated: 2026-09-25
 ---
 
-# Topic Name
+# Product Name and Version
 
-> Copy this file to `docs/topics/<topic-slug>/index.md`, replace the placeholders, and update the frontmatter topic slug and date.
+> Copy this file to `docs/topics/<product-slug>/index.md`, replace the placeholders, and update the frontmatter topic slug and date.
 
 ## Scope
 
-Describe what this collection covers, who it is for, and its intended depth.
+Describe the product, covered version or release, intended audience, and what this documentation covers.
+
+## Agent tasks
+
+List the questions agents should answer or tasks they should help users complete. Link each task to its procedure or reference page.
 
 ## Boundaries
 
@@ -23,8 +27,8 @@ List important exclusions and assumptions. Note any open questions that still ne
 
 ## Coverage map
 
-Group links to articles by reader question or subject area. Keep this map aligned with the files in the topic folder.
+Group links to product concepts, procedures, references, or troubleshooting by agent task or user question. Keep this map aligned with the files in the product folder.
 
 ## Research notes
 
-Record the research date, known limitations, and important disagreements between sources.
+Record the research date, supported product versions, known limitations, and important disagreements between sources.

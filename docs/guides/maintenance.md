@@ -1,19 +1,19 @@
 ---
-title: Maintaining the Knowledge Base
+title: Maintaining Product Documentation
 topic: knowledge-base
 last_updated: 2026-09-25
 ---
 
-# Maintaining the Knowledge Base
+# Maintaining Product Documentation
 
-Knowledge bases need review when their subject changes, a source is superseded, or a reader finds a gap. Record the date of substantive edits in page metadata and preserve the source's publication date separately when it matters.
+Product documentation needs review when product behavior or releases change, a source is superseded, or an agent task is not adequately covered. Record the date of substantive edits in page metadata and preserve source publication dates and product-version applicability separately when they matter.
 
 For an update:
 
-1. Revisit the topic scope and identify pages affected by the change.
-2. Check authoritative sources for newer or corrected information.
-3. Update the affected article and its source register; keep unresolved conflicts visible.
+1. Identify the product release or behavior change and the pages and agent tasks it affects.
+2. Check authoritative product sources for newer or corrected information.
+3. Update affected pages and the source register; distinguish release-specific behavior and keep unresolved conflicts visible.
 4. Check inbound and outbound links, regenerate the LLM index, validate, and build the site.
 5. Review the rendered pages before publishing.
 
-Do not imply that a page is current solely because its `last_updated` date is recent; the evidence itself must have been reviewed.
+Do not imply that a page applies to the latest release solely because its `last_updated` date is recent; verify the product behavior and cited evidence.

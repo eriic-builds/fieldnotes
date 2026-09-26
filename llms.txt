@@ -1,15 +1,15 @@
 # Fieldnotes
 
-> Markdown source files for a reusable, source-backed knowledge base. The searchable website is rendered from these files.
+> Source-backed product documentation in Markdown, organized for AI agent discovery and consumption. The searchable website is rendered from these same files.
 
 ## Documents
 
-- [Fieldnotes](docs/index.md)
+- [Fieldnotes Product Documentation Starter](docs/index.md)
 - [Getting Started](docs/getting-started.md)
-- [Authoring and Citations](docs/guides/authoring.md)
-- [Maintaining the Knowledge Base](docs/guides/maintenance.md)
+- [Agent-Ready Authoring and Citations](docs/guides/authoring.md)
+- [Maintaining Product Documentation](docs/guides/maintenance.md)
 - [Research Workflow](docs/guides/research-workflow.md)
 - [Article Starter](docs/starter-pages/article.md)
 - [Source Register Starter](docs/starter-pages/source-register.md)
 - [Topic Overview Starter](docs/starter-pages/topic-overview.md)
-- [Topic Collections](docs/topics/index.md)
+- [Product Documentation Collections](docs/topics/index.md)

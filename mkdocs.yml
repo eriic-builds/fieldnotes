@@ -1,5 +1,5 @@
 site_name: Fieldnotes
-site_description: A searchable knowledge base generated from source-backed Markdown.
+site_description: Product documentation optimized for AI agent consumption, generated from source-backed Markdown.
 docs_dir: docs
 site_dir: site
 

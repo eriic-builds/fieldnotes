@@ -1,55 +1,57 @@
 # Fieldnotes
 
-Fieldnotes is a reusable home for focused, source-backed documentation on any subject. Markdown is the source of truth: the same pages are presented as a searchable website and listed in the LLM-oriented `llms.txt` index.
+Fieldnotes is a home for **product documentation written for AI agent consumption**. Its primary output is a well-organized set of source-backed Markdown documents, with clear metadata, direct explanations, task-oriented procedures, and an `llms.txt` index that helps agents discover the right pages. A searchable website is generated from the same Markdown as a convenient human browsing experience.
 
-## How it works
+## The goal
 
-- **You choose a subject and its boundaries.** Each topic lives in its own folder under `docs/topics/`, with an overview, source register, and focused articles.
-- **Research is traceable.** The workflow can combine web research with materials you provide. Articles cite their evidence, while the topic's `sources.md` records source details and limitations.
-- **Markdown powers both experiences.** MkDocs turns the pages into a browsable site with navigation and search. `scripts/build_llms.py` creates the repository-root `llms.txt` index from those same pages for LLM tools.
-- **Checks catch drift.** `scripts/validate.py` checks page metadata, local links, and whether `llms.txt` matches the Markdown files. The strict MkDocs build catches documentation-site problems.
+When you provide a product or product area, Fieldnotes helps create documentation that an AI agent can retrieve, understand, and use accurately. The documents should stand on their own, answer a specific question or task, expose relevant prerequisites and constraints, and cite the evidence they rely on. They should not assume an agent has read an entire manual or infer important steps from vague prose.
 
-Fieldnotes currently has shared guidance and examples, but no subject-specific knowledge. It does not automatically crawl or refresh sources: research, citation, and review happen as part of each topic update.
+Markdown is the canonical content. `llms.txt` is generated from the Markdown inventory to point agents to relevant files; it is not a duplicate copy of the content. MkDocs generates a searchable site from those same files. Validation checks page metadata, local links, and index consistency.
 
-## How to use it with Copilot
+Fieldnotes does not automatically crawl or refresh product sources. Research, verification, and review happen when a documentation collection is created or updated.
 
-You can work conversationally from the repository. Give me the subject and the outcome you want; I can use this repository's authoring rules to scope the collection, research it, draft and organize the Markdown, update the index, run checks, and build the site.
+## How to use Fieldnotes with an AI agent
 
-For a new collection, tell me:
+Give the agent the product and the documentation outcome you want. It can follow [`AGENTS.md`](AGENTS.md) to plan the documentation, research public sources and supplied materials, write and organize Markdown, refresh `llms.txt`, validate the content, and build the site.
 
-1. **Subject and goal:** what the knowledge base should explain or help someone do.
-2. **Audience and depth:** who will use it and how technical or detailed it should be.
-3. **Scope and exclusions:** which areas to cover or leave out. If you're unsure, ask me to propose a scope first.
-4. **Sources:** provide files or links you want included, or ask me to research authoritative public sources as well. Mention any source that must not be published.
-5. **Preferred structure:** name important questions, sections, or use cases, if you already have them.
+For a new product documentation collection, provide:
+
+1. **Product and version:** the product, edition, release, or deployment the docs must describe.
+2. **Audience and agent tasks:** who uses the product and what questions or actions an AI agent should support.
+3. **Scope:** which features, workflows, APIs, integrations, or troubleshooting areas to include or exclude.
+4. **Sources:** relevant product documentation, files, links, and any authoritative public sources to research. Identify anything that must not be published.
+5. **Requirements:** preferred terminology, format, depth, or existing documentation conventions.
 
 Example request:
 
-> Build a knowledge base about **[subject]** for **[audience]**. Focus on **[scope]**, exclude **[exclusions]**, and use the files in **[location]** plus current authoritative web sources. Start by proposing a topic outline, then create the collection with citations and a source register.
+> Create AI-agent-ready product documentation for **[product and version]**. The agents should help **[audience]** with **[tasks/questions]**. Cover **[scope]**, exclude **[exclusions]**, and use **[provided sources]** plus current authoritative product sources. Start with a documentation map, then create concise, task-oriented Markdown pages with source citations and an index.
 
-If you just give me a subject, I can suggest a scope and article map before drafting. For ambiguous choices that materially affect the result, I’ll clarify them rather than silently guessing. I’ll distinguish sourced facts from interpretation and flag uncertainty or conflicting evidence.
+If you provide only a product name, the agent can propose the scope and documentation map first. Product/version assumptions should be confirmed; the docs should not blend behavior across releases without explicitly labeling it. Claims should be traceable, and uncertainties or conflicting sources should be visible rather than guessed away.
 
-### What I'll create for a topic
+### Typical collection structure
 
-For a topic called `example-subject`, the collection will generally look like this:
+For a product called `example-product`, a collection under `docs/topics/` might look like this:
 
 ```text
-docs/topics/example-subject/
-  index.md       # scope, audience, entry points, and article map
-  sources.md     # source register with stable citation IDs
-  concepts.md    # focused explanations
-  ...            # additional focused articles as needed
+docs/topics/example-product/
+  index.md              # product scope, versions, agent tasks, and document map
+  sources.md            # source register with stable citation IDs
+  overview.md           # product concepts and boundaries
+  configure-feature.md  # task-oriented setup procedure
+  api-reference.md      # precise reference material, when applicable
+  troubleshoot-issue.md # symptoms, causes, and verified resolution steps
+  ...                   # other focused pages as needed
 ```
 
-The topic overview and article starters are in [`docs/starter-pages/`](docs/starter-pages/topic-overview.md). Topic-specific pages include `topic` metadata matching their folder slug. The root `llms.txt` is regenerated from all Markdown pages; the website is built from the same files, so article content is maintained in one place.
+The starters are in [`docs/starter-pages/`](docs/starter-pages/topic-overview.md). Adapt the structure to the product and the tasks agents need to complete rather than creating every example page by default. Give every page clear metadata and a focused purpose. Keep procedures explicit about prerequisites, permissions, inputs, steps, expected results, and verification when those details apply. The root `llms.txt` is regenerated from the Markdown pages so agents can discover them without maintaining a second copy.
 
-## How to use the knowledge base yourself
+## How to use the documentation yourself
 
-1. Read [`AGENTS.md`](AGENTS.md) for the rules that guide authoring and research.
-2. Browse the [getting started guide](docs/getting-started.md), [research workflow](docs/guides/research-workflow.md), [authoring guide](docs/guides/authoring.md), and [maintenance guide](docs/guides/maintenance.md).
-3. Create a topic directory under `docs/topics/`. Copy the appropriate pages from `docs/starter-pages/` and replace the example content and metadata.
-4. Keep each article focused, cite substantive claims near the evidence, and add those sources to the topic's `sources.md`.
-5. Update the topic collection index, regenerate `llms.txt`, run the checks below, and review the rendered site.
+1. Read [`AGENTS.md`](AGENTS.md) for the product-documentation and AI-agent authoring rules.
+2. Use the [getting started guide](docs/getting-started.md), [research workflow](docs/guides/research-workflow.md), [authoring guide](docs/guides/authoring.md), and [maintenance guide](docs/guides/maintenance.md).
+3. Create a product directory under `docs/topics/`, then adapt the relevant pages from `docs/starter-pages/`.
+4. Keep each page focused and evidence-backed; record product/version applicability and cite sources near substantive claims.
+5. Regenerate `llms.txt`, run the checks below, and inspect the rendered site.
 
 Never put confidential material, credentials, or personal data in this repository. Confirm that supplied documents may be published before including their contents in a GitHub repository.
 
@@ -81,4 +83,4 @@ Open the local URL printed by `mkdocs serve`. Re-run the index generator after a
 
 ## Publish with GitHub Pages
 
-Push this project to a GitHub repository with a `main` branch, then select **Settings > Pages > Build and deployment > GitHub Actions**. The workflow in `.github/workflows/pages.yml` validates the content, builds the site, and deploys it on pushes to `main` and on manual runs. Commit the generated `llms.txt` with the Markdown so it is also available to tools that read the repository directly.
+Push this project to a GitHub repository with a `main` branch, then select **Settings > Pages > Build and deployment > GitHub Actions**. The workflow in `.github/workflows/pages.yml` validates the content, builds the site, and deploys it on pushes to `main` and on manual runs. Commit `llms.txt` with the Markdown so agents can discover the documentation directly from the repository even when they do not use the website.

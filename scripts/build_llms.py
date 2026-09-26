@@ -39,7 +39,7 @@ def render_index() -> str:
     lines = [
         "# Fieldnotes",
         "",
-        "> Markdown source files for a reusable, source-backed knowledge base. The searchable website is rendered from these files.",
+        "> Source-backed product documentation in Markdown, organized for AI agent discovery and consumption. The searchable website is rendered from these same files.",
         "",
         "## Documents",
         "",

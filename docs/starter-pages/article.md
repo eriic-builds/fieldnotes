@@ -4,17 +4,17 @@ topic: example-topic
 last_updated: 2026-01-01
 ---
 
-# Replace with article title
+# Replace with page title
 
-> Copy this file into the relevant topic folder, replace the placeholders, set `topic` to the folder slug, and set `last_updated` to the date of the substantive edit.
+> Copy this file into the relevant product folder, replace the placeholders, set `topic` to the folder slug, and set `last_updated` to the date of the substantive edit.
 
-## Summary
+## Answer or outcome
 
-Answer the page's main question directly in a few sentences.
+State the answer or task outcome directly. Identify the product version when it affects the answer.
 
 ## Details
 
-Explain the concept or process. Define terms and use focused headings. Put citations close to the claims they support, using links or source IDs from `sources.md`.
+Explain the concept or procedure with focused headings. For procedures, include prerequisites, permissions, inputs, ordered steps, expected results, and verification where applicable. Put citations close to the claims they support, using links or source IDs from `sources.md`.
 
 ## Limitations and open questions
 
@@ -22,7 +22,7 @@ Describe uncertainty, conflicting evidence, scope limits, or details that need f
 
 ## Related pages
 
-- Link related articles in this topic collection.
+- Link related product documentation that provides additional context.
 
 ## References
 

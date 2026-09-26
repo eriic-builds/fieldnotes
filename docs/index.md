@@ -1,20 +1,22 @@
 ---
-title: Fieldnotes
+title: Fieldnotes Product Documentation Starter
 topic: knowledge-base
 last_updated: 2026-09-25
 ---
 
 # Fieldnotes
 
-Fieldnotes is a reusable framework for creating clear, source-backed documentation whenever a topic is chosen. It keeps Markdown as the source of truth and presents the same content as a searchable website and an LLM-friendly index.
+Fieldnotes is for creating product documentation in a content format optimized for AI agent consumption. Markdown is the source of truth: focused, source-backed pages are indexed in `llms.txt` for agent discovery and rendered as a searchable site for people.
 
-## Browse the starter
+Write pages so an agent can retrieve and use them accurately: make product and release applicability explicit, structure procedures around prerequisites and verified steps, and cite authoritative sources near the claims they support.
 
-- [Getting started](getting-started.md) explains the repository and the first steps for a new subject.
-- [Research workflow](guides/research-workflow.md) describes how to combine web research with materials you provide.
-- [Authoring and citation guide](guides/authoring.md) covers page structure, evidence, and uncertainty.
-- [Maintaining the knowledge base](guides/maintenance.md) covers updates and verification.
-- [Topic collections](topics/index.md) is the entry point for subject-specific content.
-- [Starter pages](starter-pages/topic-overview.md) provides pages to copy for each topic.
+## Explore Fieldnotes
 
-No subject-specific articles have been added yet.
+- [Getting started](getting-started.md) explains how to begin product documentation.
+- [Research workflow](guides/research-workflow.md) covers public and supplied product sources.
+- [Authoring and citation guide](guides/authoring.md) covers agent-ready page structure, evidence, and uncertainty.
+- [Maintaining the documentation](guides/maintenance.md) covers version-aware updates and verification.
+- [Product collections](topics/index.md) is the entry point for product-specific documentation.
+- [Starter pages](starter-pages/topic-overview.md) provides pages to adapt for each product.
+
+No product-specific documentation has been added yet.

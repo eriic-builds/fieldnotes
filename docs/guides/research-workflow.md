@@ -6,13 +6,13 @@ last_updated: 2026-09-25
 
 # Research Workflow
 
-## Define the research brief
+## Define the documentation brief
 
-Before collecting sources, record the topic boundaries, intended audience, questions the knowledge base should answer, desired depth, and known exclusions. Ask for clarification rather than silently choosing among materially different scopes.
+Before collecting sources, record the product and version, intended audience, tasks or questions agents should support, scope, and known exclusions. Ask for clarification rather than silently choosing among materially different product releases or behaviors.
 
 ## Gather and assess sources
 
-Use both public web research and materials supplied for the task when available. Start with primary sources (such as official documentation, legislation, research papers, or first-party data) and use reputable secondary sources for explanation and context. For each source, note:
+Use both public web research and materials supplied for the task when available. Start with authoritative first-party product documentation, release notes, API references, and product specifications. Use reputable secondary sources only for explanation or corroboration. For each source, note:
 
 - who published or authored it and when
 - what claims or parts of the topic it supports
@@ -27,6 +27,6 @@ Track the original filename and the relevant page, heading, or section. Separate
 
 ## Draft and maintain provenance
 
-Draft a small article map before writing. Cite evidence close to each substantive claim and connect each citation to an entry in the topic's source register. Preserve dates for time-sensitive claims. When a claim cannot be verified, omit it or label the uncertainty clearly.
+Draft a small page map organized around the product tasks and questions before writing. Cite evidence close to each substantive claim and connect each citation to an entry in the product's source register. Preserve source dates and product-version applicability for time-sensitive behavior. When a claim cannot be verified, omit it or label the uncertainty clearly.
 
 Before publishing, check that citations resolve to sources, the scope is represented accurately, and no private material or unsupported assertions remain. The [authoring guide](authoring.md) defines the page conventions.
