@@ -1,0 +1,15 @@
+# Topic Knowledge Base
+
+> Markdown source files for a reusable, source-backed knowledge base. The searchable website is rendered from these files.
+
+## Documents
+
+- [Topic Knowledge Base Starter](docs/index.md)
+- [Getting Started](docs/getting-started.md)
+- [Authoring and Citations](docs/guides/authoring.md)
+- [Maintaining the Knowledge Base](docs/guides/maintenance.md)
+- [Research Workflow](docs/guides/research-workflow.md)
+- [Article Starter](docs/starter-pages/article.md)
+- [Source Register Starter](docs/starter-pages/source-register.md)
+- [Topic Overview Starter](docs/starter-pages/topic-overview.md)
+- [Topic Collections](docs/topics/index.md)
