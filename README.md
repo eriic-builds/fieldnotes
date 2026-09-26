@@ -10,23 +10,31 @@ Markdown is the canonical content. `llms.txt` is generated from the Markdown inv
 
 Fieldnotes does not automatically crawl or refresh sources. Research, verification, and review happen when a documentation collection is created or updated.
 
+### What can it document?
+
+The structure is intentionally subject-neutral. Collections might explain a scientific field, a programming language, a policy or regulation, an organization's process, a technical system, or a commercial product. Product and API references are examples, not requirements. The collection structure should fit the subject and the questions agents need to answer.
+
 ## How to use Fieldnotes with an AI agent
 
 Give the agent the subject and the documentation outcome you want. It can follow [`AGENTS.md`](AGENTS.md) to plan the collection, research public sources and supplied materials, write and organize Markdown, refresh `llms.txt`, validate the content, and build the site.
 
-For a new documentation collection, provide:
+For a new collection, provide:
 
 1. **Subject and goal:** what the documentation should explain or help someone do.
-2. **Audience and agent tasks:** who will use the documentation and what questions or actions an AI agent should support.
+2. **Audience and agent tasks:** who will use the documentation and what questions or actions an AI agent should support. The audience can include people as well as agents.
 3. **Scope:** which concepts, processes, systems, use cases, or other areas to include or exclude.
 4. **Sources:** files, links, and authoritative public sources to research. Identify anything that must not be published.
-5. **Requirements:** preferred terminology, format, depth, or existing documentation conventions.
+5. **Relevant context:** versions, dates, jurisdictions, environments, preferred terminology, or desired depth, where applicable.
 
 Example request:
 
 > Create documentation optimized for AI agents about **[subject]**. The agents should help **[audience]** with **[tasks/questions]**. Cover **[scope]**, exclude **[exclusions]**, and use **[provided sources]** plus current authoritative sources. Start with a documentation map, then create concise, source-backed Markdown pages with an index.
 
-If you provide only a subject, the agent can propose the scope and documentation map first. Confirm assumptions that materially affect the content, such as product versions, dates, jurisdictions, or intended audience. Claims should be traceable, and uncertainties or conflicting sources should be visible rather than guessed away.
+For example, this request works for a subject that isn't a product:
+
+> Create AI-agent-ready documentation explaining **[scientific concept, process, policy, or other subject]** for **[audience]**. Help agents answer **[questions]**. Use **[provided material]** and current authoritative sources, and clearly mark areas of uncertainty.
+
+If you provide only a subject, the agent can propose the scope and documentation map first. Confirm assumptions that materially affect the content, such as product versions, dates, jurisdictions, operating environments, or intended audience. Claims should be traceable, and uncertainties or conflicting sources should be visible rather than guessed away.
 
 ### Typical collection structure
 
