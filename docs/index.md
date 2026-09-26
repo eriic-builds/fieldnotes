@@ -1,12 +1,12 @@
 ---
-title: Topic Knowledge Base Starter
+title: Fieldnotes
 topic: knowledge-base
 last_updated: 2026-09-25
 ---
 
-# Topic Knowledge Base Starter
+# Fieldnotes
 
-This repository is a reusable framework for creating a clear, source-backed knowledge base whenever a topic is chosen. It keeps Markdown as the source of truth and presents the same content as a searchable website and an LLM-friendly index.
+Fieldnotes is a reusable framework for creating clear, source-backed documentation whenever a topic is chosen. It keeps Markdown as the source of truth and presents the same content as a searchable website and an LLM-friendly index.
 
 ## Browse the starter
 

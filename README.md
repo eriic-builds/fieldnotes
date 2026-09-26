@@ -1,6 +1,6 @@
-# Topic Knowledge Base Starter
+# Fieldnotes
 
-A reusable starter for building a focused, source-backed knowledge base on any subject. Markdown is the source of truth: the same pages are presented as a searchable website and listed in the LLM-oriented `llms.txt` index.
+Fieldnotes is a reusable home for focused, source-backed documentation on any subject. Markdown is the source of truth: the same pages are presented as a searchable website and listed in the LLM-oriented `llms.txt` index.
 
 ## How it works
 
@@ -9,7 +9,7 @@ A reusable starter for building a focused, source-backed knowledge base on any s
 - **Markdown powers both experiences.** MkDocs turns the pages into a browsable site with navigation and search. `scripts/build_llms.py` creates the repository-root `llms.txt` index from those same pages for LLM tools.
 - **Checks catch drift.** `scripts/validate.py` checks page metadata, local links, and whether `llms.txt` matches the Markdown files. The strict MkDocs build catches documentation-site problems.
 
-The starter currently has shared guidance and examples, but no subject-specific knowledge. It does not automatically crawl or refresh sources: research, citation, and review happen as part of each topic update.
+Fieldnotes currently has shared guidance and examples, but no subject-specific knowledge. It does not automatically crawl or refresh sources: research, citation, and review happen as part of each topic update.
 
 ## How to use it with Copilot
 

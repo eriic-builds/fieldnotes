@@ -1,10 +1,10 @@
-# Topic Knowledge Base
+# Fieldnotes
 
 > Markdown source files for a reusable, source-backed knowledge base. The searchable website is rendered from these files.
 
 ## Documents
 
-- [Topic Knowledge Base Starter](docs/index.md)
+- [Fieldnotes](docs/index.md)
 - [Getting Started](docs/getting-started.md)
 - [Authoring and Citations](docs/guides/authoring.md)
 - [Maintaining the Knowledge Base](docs/guides/maintenance.md)

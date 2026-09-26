@@ -37,7 +37,7 @@ def markdown_pages() -> list[Path]:
 
 def render_index() -> str:
     lines = [
-        "# Topic Knowledge Base",
+        "# Fieldnotes",
         "",
         "> Markdown source files for a reusable, source-backed knowledge base. The searchable website is rendered from these files.",
         "",
