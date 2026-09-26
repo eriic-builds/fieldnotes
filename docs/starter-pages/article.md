@@ -6,11 +6,11 @@ last_updated: 2026-01-01
 
 # Replace with page title
 
-> Copy this file into the relevant product folder, replace the placeholders, set `topic` to the folder slug, and set `last_updated` to the date of the substantive edit.
+> Copy this file into the relevant collection folder, replace the placeholders, set `topic` to the folder slug, and set `last_updated` to the date of the substantive edit.
 
 ## Answer or outcome
 
-State the answer or task outcome directly. Identify the product version when it affects the answer.
+State the answer or task outcome directly. Identify relevant applicability boundaries, such as product version, when they affect the answer.
 
 ## Details
 
@@ -22,7 +22,7 @@ Describe uncertainty, conflicting evidence, scope limits, or details that need f
 
 ## Related pages
 
-- Link related product documentation that provides additional context.
+- Link related documentation that provides additional context.
 
 ## References
 

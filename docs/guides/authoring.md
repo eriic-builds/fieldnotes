@@ -20,9 +20,9 @@ last_updated: YYYY-MM-DD
 
 Use `topic: knowledge-base` for shared guidance and templates. Use the topic folder's slug for topic-specific pages. Update the date when the page's substance changes.
 
-Write one page around one main product question, concept, task, or reference. Begin with the direct answer or outcome, define product-specific terms, and use descriptive headings. Keep pages understandable when retrieved on their own; state relevant product and release applicability instead of relying on context hidden in another page.
+Write one page around one main question, concept, task, or reference. Begin with the direct answer or outcome, define subject-specific terms, and use descriptive headings. Keep pages understandable when retrieved on their own; state relevant boundaries such as product, release, date, jurisdiction, or environment instead of relying on context hidden in another page.
 
-For procedures, include the prerequisites, permissions, inputs, ordered steps, expected result, and verification method when they apply. For troubleshooting, distinguish symptoms from causes and provide only verified resolution steps. For API or configuration references, preserve exact names, values, constraints, and version applicability from authoritative sources. Do not add a section simply to fill a template when it is not relevant.
+For procedures, include the prerequisites, permissions, inputs, ordered steps, expected result, and verification method when they apply. For troubleshooting, distinguish symptoms from causes and provide only verified resolution steps. For technical or other precise references, preserve exact names, values, constraints, and applicability from authoritative sources. Do not add a section simply to fill a template when it is not relevant.
 
 Use links for deeper context, not to hide information essential to the current task. Do not rely on images or site-specific presentation for critical instructions; include that information as Markdown text.
 
@@ -34,7 +34,7 @@ Attribute quotations and keep them brief. Summarize source material in original 
 
 ## Review before publishing
 
-- Confirm that the page is within the agreed product and version scope and supports a defined agent task or information need.
+- Confirm that the page is within the agreed subject and scope and supports a defined agent task or information need.
 - Verify key details, source links, dates, and names against the source material.
 - Check that citations support the claims they follow and that limitations are represented.
 - Check that procedures are usable when retrieved independently and that prerequisites, outcomes, and verification are explicit where needed.

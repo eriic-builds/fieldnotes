@@ -6,17 +6,17 @@ last_updated: 2026-09-25
 
 # Getting Started
 
-## When a product is selected
+## When a subject is selected
 
-First establish the product and applicable version, intended audience, tasks agents should support, documentation scope, and exclusions. Then gather supplied product materials and identify authoritative public sources to fill gaps.
+First establish the subject, intended audience, tasks or questions agents should support, documentation scope, and exclusions. Identify relevant boundaries, such as product versions, dates, jurisdictions, or technical environments, when they matter. Then gather supplied materials and identify authoritative public sources to fill gaps.
 
-Create `docs/topics/<product-slug>/` and add:
+Create `docs/topics/<subject-slug>/` and add:
 
-- `index.md` using [the topic overview starter](starter-pages/topic-overview.md), adapted to record the product scope, version, and agent tasks
+- `index.md` using [the topic overview starter](starter-pages/topic-overview.md), adapted to record the subject scope, applicable boundaries, and agent tasks
 - `sources.md` using [the source register starter](starter-pages/source-register.md)
-- focused product pages using [the article starter](starter-pages/article.md)
+- focused pages using [the article starter](starter-pages/article.md)
 
-Use a short, descriptive lowercase slug with hyphens. The product index should explain scope and version applicability, describe the tasks supported, and link to the relevant procedures and references. Write each page so an agent can use it when retrieved independently. The site navigation is generated from the folder structure.
+Use a short, descriptive lowercase slug with hyphens. The collection index should explain scope and applicability, describe the tasks or questions supported, and link to the relevant procedures and references. Write each page so an agent can use it when retrieved independently. The site navigation is generated from the folder structure.
 
 ## Check and publish
 
